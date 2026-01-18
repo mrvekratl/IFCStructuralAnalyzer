@@ -53,7 +53,7 @@ namespace IFCStructuralAnalyzer.Presentation.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/IFCStructuralAnalyzer.Presentation;V1.0.0.0;component/views/ifcimportview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/IFCStructuralAnalyzer.Presentation;component/views/ifcimportview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\IFCImportView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\IFCStructuralAnalyzer.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\IFCStructuralAnalyzer.Domain.csproj",
       "projectName": "IFCStructuralAnalyzer.Domain",
-      "projectPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\IFCStructuralAnalyzer.Domain.csproj",
+      "projectPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\IFCStructuralAnalyzer.Domain.csproj",
       "packagesPath": "C:\\Users\\Monster\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Monster\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,9 +1,4 @@
 ﻿using IFCStructuralAnalyzer.Application.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xbim.Ifc4.Interfaces;
 
 namespace IFCStructuralAnalyzer.Application.Services.Concrete
@@ -50,10 +45,7 @@ namespace IFCStructuralAnalyzer.Application.Services.Concrete
                 if (dimensions.HasValue)
                     return dimensions.Value;
 
-                // Fallback: Try to get from geometry bounding box
-                dimensions = ExtractDimensionsFromBoundingBox(product);
-                if (dimensions.HasValue)
-                    return dimensions.Value;
+                // Fallback: use defaults
             }
             catch
             {
@@ -86,35 +78,75 @@ namespace IFCStructuralAnalyzer.Application.Services.Concrete
         {
             try
             {
-                // Find the building storey
-                var spatialElement = product.ContainedInStructure.FirstOrDefault()?.RelatingStructure;
-
-                if (spatialElement is IIfcBuildingStorey storey)
+                // IFC4 API için spatial structure bulma
+                // Yöntem 1: Model üzerinden IIfcRelContainedInSpatialStructure arama
+                var model = product.Model;
+                if (model != null)
                 {
-                    // Try to get elevation or name
-                    var elevation = storey.Elevation;
-                    if (elevation.HasValue)
-                    {
-                        // Convert elevation to floor number (assuming 3m per floor)
-                        return (int)Math.Round(elevation.Value / 3000.0);
-                    }
+                    var spatialRels = model.Instances
+                        .OfType<IIfcRelContainedInSpatialStructure>()
+                        .Where(r => r.RelatedElements != null && r.RelatedElements.Contains(product));
 
-                    // Try to parse from name (e.g., "Level 1", "Floor 2")
-                    var name = storey.Name?.ToString() ?? "";
-                    var digits = new string(name.Where(char.IsDigit).ToArray());
-                    if (int.TryParse(digits, out int floorNumber))
-                        return floorNumber;
+                    foreach (var rel in spatialRels)
+                    {
+                        if (rel.RelatingStructure is IIfcBuildingStorey storey)
+                        {
+                            return GetFloorNumberFromStorey(storey);
+                        }
+                    }
                 }
+
+                // Yöntem 2: Decomposes ilişkisinden
+                var decomposes = product.Decomposes?.FirstOrDefault();
+                if (decomposes?.RelatingObject is IIfcBuildingStorey decompStorey)
+                {
+                    return GetFloorNumberFromStorey(decompStorey);
+                }
+
+                // Yöntem 3: Location'dan tahmin et (fallback)
+                var location = ConvertLocation(product.ObjectPlacement);
+                if (location.Z > 0)
+                {
+                    // Z koordinatından kat tahmini (3000mm = 1 kat)
+                    return (int)Math.Round(location.Z / 3000.0);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log error if needed
+                Console.WriteLine($"Error getting floor level: {ex.Message}");
+            }
+
+            return 0; // Default to ground floor
+        }
+
+        #region Private Helper Methods
+
+        private int GetFloorNumberFromStorey(IIfcBuildingStorey storey)
+        {
+            try
+            {
+                // Elevation'dan kat numarası
+                var elevation = storey.Elevation;
+                if (elevation.HasValue)
+                {
+                    // 3000mm (3m) per floor assumption
+                    return (int)Math.Round(elevation.Value / 3000.0);
+                }
+
+                // İsimden parse et (e.g., "Level 1", "Floor 2", "Kat 3")
+                var name = storey.Name?.ToString() ?? "";
+                var digits = new string(name.Where(char.IsDigit).ToArray());
+                if (int.TryParse(digits, out int floorNumber))
+                    return floorNumber;
             }
             catch
             {
-                // Default to ground floor
+                // Return 0 if parsing fails
             }
 
             return 0;
         }
-
-        #region Private Helper Methods
 
         private (double Width, double Depth, double Height)? ExtractDimensionsFromPropertySets(IIfcProduct product)
         {
@@ -142,7 +174,7 @@ namespace IFCStructuralAnalyzer.Application.Services.Concrete
                         if (value == null) continue;
 
                         // Match common property names
-                        if (propName.Contains("width") || propName.Contains("w"))
+                        if (propName.Contains("width") || propName == "w")
                             width = value;
                         else if (propName.Contains("depth") || propName.Contains("d") || propName.Contains("thickness"))
                             depth = value;
@@ -160,20 +192,6 @@ namespace IFCStructuralAnalyzer.Application.Services.Concrete
             }
 
             return null;
-        }
-
-        private (double Width, double Depth, double Height)? ExtractDimensionsFromBoundingBox(IIfcProduct product)
-        {
-            try
-            {
-                // This is a simplified approach - in production, you'd use Xbim.Geometry.Engine
-                // For now, return null to use defaults
-                return null;
-            }
-            catch
-            {
-                return null;
-            }
         }
 
         private double GetVolumeFromQuantitySets(IIfcProduct product)

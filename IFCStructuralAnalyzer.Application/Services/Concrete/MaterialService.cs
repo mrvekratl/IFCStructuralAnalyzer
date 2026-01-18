@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using IFCStructuralAnalyzer.Application.DTOs;
 using IFCStructuralAnalyzer.Application.Services.Interfaces;
+using IFCStructuralAnalyzer.Infrastructure.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

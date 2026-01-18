@@ -16,7 +16,7 @@ namespace IFCStructuralAnalyzer.Infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services)
         {
-            // DbContext - connection string DbContext içinde
+            // DbContext
             services.AddDbContext<IFCAnalyzerDbContext>();
 
             // Repositories

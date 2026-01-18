@@ -1,4 +1,5 @@
-﻿using IFCStructuralAnalyzer.Application.Mapping;
+﻿using AutoMapper;
+using IFCStructuralAnalyzer.Application.Mapping;
 using IFCStructuralAnalyzer.Application.Services.Concrete;
 using IFCStructuralAnalyzer.Application.Services.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,8 +15,8 @@ namespace IFCStructuralAnalyzer.Application
     {
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
-            // AutoMapper
-            services.AddAutoMapper(typeof(AutoMapperProfile));
+            // AutoMapper - Assembly'den otomatik profile bulma
+            services.AddAutoMapper(typeof(DependencyInjection).Assembly); 
 
             // Services
             services.AddScoped<IIFCParserService, IFCParserService>();

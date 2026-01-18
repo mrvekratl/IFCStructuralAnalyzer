@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Presentation\obj\Debug\net8.0-windows\
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Presentation\obj\Debug\net8.0-windows\
 IFCStructuralAnalyzer.Presentation
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Presentation\App.xaml
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Presentation\App.xaml
 4969370314
 22-1174771812
 12-999772918
-2711198215562
+272369915671
 Views\ElementListView.xaml;Views\IFCImportView.xaml;Views\MainWindow.xaml;Views\Viewport3DView.xaml;
 
-True
+False
 

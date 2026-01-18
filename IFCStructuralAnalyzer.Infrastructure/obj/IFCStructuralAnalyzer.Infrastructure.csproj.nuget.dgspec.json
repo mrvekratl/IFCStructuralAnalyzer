@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Infrastructure\\IFCStructuralAnalyzer.Infrastructure.csproj": {}
+    "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Infrastructure\\IFCStructuralAnalyzer.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Application\\IFCStructuralAnalyzer.Application.csproj": {
+    "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Application\\IFCStructuralAnalyzer.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Application\\IFCStructuralAnalyzer.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Application\\IFCStructuralAnalyzer.Application.csproj",
         "projectName": "IFCStructuralAnalyzer.Application",
-        "projectPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Application\\IFCStructuralAnalyzer.Application.csproj",
+        "projectPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Application\\IFCStructuralAnalyzer.Application.csproj",
         "packagesPath": "C:\\Users\\Monster\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Application\\obj\\",
+        "outputPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Monster\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\IFCStructuralAnalyzer.Domain.csproj": {
-                "projectPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\IFCStructuralAnalyzer.Domain.csproj"
+              "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\IFCStructuralAnalyzer.Domain.csproj": {
+                "projectPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\IFCStructuralAnalyzer.Domain.csproj"
               }
             }
           }
@@ -50,9 +50,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "AutoMapper": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[16.0.0, )"
+              "version": "[12.0.0, )"
             },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
@@ -87,14 +87,14 @@
         }
       }
     },
-    "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\IFCStructuralAnalyzer.Domain.csproj": {
+    "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\IFCStructuralAnalyzer.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\IFCStructuralAnalyzer.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\IFCStructuralAnalyzer.Domain.csproj",
         "projectName": "IFCStructuralAnalyzer.Domain",
-        "projectPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\IFCStructuralAnalyzer.Domain.csproj",
+        "projectPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\IFCStructuralAnalyzer.Domain.csproj",
         "packagesPath": "C:\\Users\\Monster\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Monster\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -148,14 +148,14 @@
         }
       }
     },
-    "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Infrastructure\\IFCStructuralAnalyzer.Infrastructure.csproj": {
+    "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Infrastructure\\IFCStructuralAnalyzer.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Infrastructure\\IFCStructuralAnalyzer.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Infrastructure\\IFCStructuralAnalyzer.Infrastructure.csproj",
         "projectName": "IFCStructuralAnalyzer.Infrastructure",
-        "projectPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Infrastructure\\IFCStructuralAnalyzer.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Infrastructure\\IFCStructuralAnalyzer.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Monster\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Monster\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -173,11 +173,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Application\\IFCStructuralAnalyzer.Application.csproj": {
-                "projectPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Application\\IFCStructuralAnalyzer.Application.csproj"
+              "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Application\\IFCStructuralAnalyzer.Application.csproj": {
+                "projectPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Application\\IFCStructuralAnalyzer.Application.csproj"
               },
-              "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\IFCStructuralAnalyzer.Domain.csproj": {
-                "projectPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\IFCStructuralAnalyzer.Domain.csproj"
+              "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\IFCStructuralAnalyzer.Domain.csproj": {
+                "projectPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Domain\\IFCStructuralAnalyzer.Domain.csproj"
               }
             }
           }

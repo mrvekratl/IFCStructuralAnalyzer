@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IFCStructuralAnalyzer.Infrastructure.Repositories.Interfaces
+namespace IFCStructuralAnalyzer.Application.Abstractions.Repositories.Interfaces
 {
     public interface IMaterialRepository : IGenericRepository<Material>
     {

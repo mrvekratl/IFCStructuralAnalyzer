@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fZCOKcBrH2A=",
+  "dgSpecHash": "WxUCKDTwk5I=",
   "success": true,
   "projectFilePath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Infrastructure\\IFCStructuralAnalyzer.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -34,7 +34,7 @@
     "C:\\Users\\Monster\\.nuget\\packages\\microsoft.extensions.dependencymodel\\8.0.0\\microsoft.extensions.dependencymodel.8.0.0.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\Monster\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "C:\\Users\\Monster\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\microsoft.identity.client\\4.47.2\\microsoft.identity.client.4.47.2.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\2.19.3\\microsoft.identity.client.extensions.msal.2.19.3.nupkg.sha512",
@@ -80,42 +80,22 @@
     "C:\\Users\\Monster\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
-    "C:\\Users\\Monster\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\xbim.common\\6.0.563\\xbim.common.6.0.563.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\xbim.essentials\\6.0.563\\xbim.essentials.6.0.563.nupkg.sha512",
-    "C:\\Users\\Monster\\.nuget\\packages\\xbim.geometry\\5.1.820\\xbim.geometry.5.1.820.nupkg.sha512",
-    "C:\\Users\\Monster\\.nuget\\packages\\xbim.geometry.engine.interop\\5.1.820\\xbim.geometry.engine.interop.5.1.820.nupkg.sha512",
+    "C:\\Users\\Monster\\.nuget\\packages\\xbim.geometry\\6.3.873-netcore\\xbim.geometry.6.3.873-netcore.nupkg.sha512",
+    "C:\\Users\\Monster\\.nuget\\packages\\xbim.geometry.abstractions\\6.3.873-netcore\\xbim.geometry.abstractions.6.3.873-netcore.nupkg.sha512",
+    "C:\\Users\\Monster\\.nuget\\packages\\xbim.geometry.engine.interop\\6.3.873-netcore\\xbim.geometry.engine.interop.6.3.873-netcore.nupkg.sha512",
+    "C:\\Users\\Monster\\.nuget\\packages\\xbim.geometry.occt\\7.8.1\\xbim.geometry.occt.7.8.1.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\xbim.ifc\\6.0.563\\xbim.ifc.6.0.563.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\xbim.ifc2x3\\6.0.563\\xbim.ifc2x3.6.0.563.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\xbim.ifc4\\6.0.563\\xbim.ifc4.6.0.563.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\xbim.ifc4x3\\6.0.563\\xbim.ifc4x3.6.0.563.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\xbim.io.esent\\6.0.563\\xbim.io.esent.6.0.563.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\xbim.io.memorymodel\\6.0.563\\xbim.io.memorymodel.6.0.563.nupkg.sha512",
-    "C:\\Users\\Monster\\.nuget\\packages\\xbim.modelgeometry.scene\\5.1.820\\xbim.modelgeometry.scene.5.1.820.nupkg.sha512",
-    "C:\\Users\\Monster\\.nuget\\packages\\xbim.tessellator\\6.0.489\\xbim.tessellator.6.0.489.nupkg.sha512"
+    "C:\\Users\\Monster\\.nuget\\packages\\xbim.modelgeometry.scene\\6.3.873-netcore\\xbim.modelgeometry.scene.6.3.873-netcore.nupkg.sha512",
+    "C:\\Users\\Monster\\.nuget\\packages\\xbim.tessellator\\6.3.873-netcore\\xbim.tessellator.6.3.873-netcore.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Xbim.Geometry.Engine.Interop 5.1.820' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Xbim.Geometry.Engine.Interop",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Xbim.ModelGeometry.Scene 5.1.820' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Xbim.ModelGeometry.Scene",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }

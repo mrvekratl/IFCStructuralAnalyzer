@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IFCStructuralAnalyzer.Domain.ValueObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,24 @@ namespace IFCStructuralAnalyzer.Domain.Entities
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public string GlobalId { get; set; } = string.Empty;
+       
+        protected StructuralElement(string name, string globalId)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+                throw new ArgumentException("Name cannot be empty");
+            if (string.IsNullOrWhiteSpace(globalId))
+                throw new ArgumentException("GlobalId cannot be empty");
+
+            Name = name;
+            GlobalId = globalId;
+            ImportDate = DateTime.Now;
+        }
+        protected StructuralElement()
+        {
+            Name = string.Empty;
+            GlobalId = string.Empty;
+            ImportDate = DateTime.Now;
+        }
 
         // Location
         public double LocationX { get; set; }

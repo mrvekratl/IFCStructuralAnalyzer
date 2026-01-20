@@ -1,18 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xbim.Ifc4.Interfaces;
+using Xbim.Ifc;
 
 namespace IFCStructuralAnalyzer.Application.Services.Interfaces
 {
     public interface IGeometryConversionService
     {
-        /// <summary>
-        /// Convert IFC location to our coordinate system
+               /// <summary>
+        /// Set geometry context for the IFC model
         /// </summary>
-        (double X, double Y, double Z) ConvertLocation(IIfcObjectPlacement? placement);
+        void SetGeometryContext(IfcStore model);
+
+        /// <summary>
+        /// Get real world location using Geometry Engine
+        /// </summary>
+        (double X, double Y, double Z) GetRealWorldLocation(IIfcProduct product);      
+        
 
         /// <summary>
         /// Extract dimensions from IFC element

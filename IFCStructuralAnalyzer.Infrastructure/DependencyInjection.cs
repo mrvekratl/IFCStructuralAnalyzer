@@ -1,6 +1,6 @@
-﻿using IFCStructuralAnalyzer.Infrastructure.Data.Context;
+﻿using IFCStructuralAnalyzer.Application.Abstractions.Repositories.Interfaces;
+using IFCStructuralAnalyzer.Infrastructure.Data.Context;
 using IFCStructuralAnalyzer.Infrastructure.Repositories.Concrete;
-using IFCStructuralAnalyzer.Infrastructure.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

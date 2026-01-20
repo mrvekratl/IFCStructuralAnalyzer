@@ -1,3 +1,18 @@
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Application\bin\Debug\net8.0\IFCStructuralAnalyzer.Application.deps.json
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Application\bin\Debug\net8.0\IFCStructuralAnalyzer.Application.dll
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Application\bin\Debug\net8.0\IFCStructuralAnalyzer.Application.pdb
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Application\bin\Debug\net8.0\IFCStructuralAnalyzer.Domain.dll
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Application\bin\Debug\net8.0\IFCStructuralAnalyzer.Domain.pdb
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Application\obj\Debug\net8.0\IFCStructuralAnalyzer.Application.csproj.AssemblyReference.cache
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Application\obj\Debug\net8.0\IFCStructuralAnalyzer.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Application\obj\Debug\net8.0\IFCStructuralAnalyzer.Application.AssemblyInfoInputs.cache
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Application\obj\Debug\net8.0\IFCStructuralAnalyzer.Application.AssemblyInfo.cs
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Application\obj\Debug\net8.0\IFCStructuralAnalyzer.Application.csproj.CoreCompileInputs.cache
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Application\obj\Debug\net8.0\IFCStruc.4F5B78B0.Up2Date
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Application\obj\Debug\net8.0\IFCStructuralAnalyzer.Application.dll
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Application\obj\Debug\net8.0\refint\IFCStructuralAnalyzer.Application.dll
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Application\obj\Debug\net8.0\IFCStructuralAnalyzer.Application.pdb
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Application\obj\Debug\net8.0\ref\IFCStructuralAnalyzer.Application.dll
 C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Application\bin\Debug\net8.0\IFCStructuralAnalyzer.Application.deps.json
 C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Application\bin\Debug\net8.0\IFCStructuralAnalyzer.Application.dll
 C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Application\bin\Debug\net8.0\IFCStructuralAnalyzer.Application.pdb

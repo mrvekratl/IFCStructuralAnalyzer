@@ -1,11 +1,6 @@
 ﻿using AutoMapper;
 using IFCStructuralAnalyzer.Application.DTOs;
 using IFCStructuralAnalyzer.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IFCStructuralAnalyzer.Application.Mapping
 {
@@ -13,7 +8,7 @@ namespace IFCStructuralAnalyzer.Application.Mapping
     {
         public AutoMapperProfile()
         {
-            // StructuralElement mappings
+            // Entity -> DTO (okuma için)
             CreateMap<StructuralElement, StructuralElementDto>()
                 .ForMember(dest => dest.ElementType, opt => opt.MapFrom(src =>
                     src is StructuralColumn ? "Column" :
@@ -33,15 +28,24 @@ namespace IFCStructuralAnalyzer.Application.Mapping
             CreateMap<StructuralSlab, StructuralElementDto>()
                 .IncludeBase<StructuralElement, StructuralElementDto>();
 
-            // Reverse mappings
+            // DTO -> Entity BASE MAPPING (YENİ)
+            CreateMap<StructuralElementDto, StructuralElement>()
+                .ForMember(dest => dest.Material, opt => opt.Ignore())
+                .ForMember(dest => dest.GlobalId, opt => opt.Ignore())
+                .ForMember(dest => dest.Id, opt => opt.Ignore())
+                .Include<StructuralElementDto, StructuralColumn>()
+                .Include<StructuralElementDto, StructuralBeam>()
+                .Include<StructuralElementDto, StructuralSlab>();
+
+            // DTO -> Entity SPECIFIC MAPPINGS
             CreateMap<StructuralElementDto, StructuralColumn>()
-                .ForMember(dest => dest.Material, opt => opt.Ignore());
+                .IncludeBase<StructuralElementDto, StructuralElement>();
 
             CreateMap<StructuralElementDto, StructuralBeam>()
-                .ForMember(dest => dest.Material, opt => opt.Ignore());
+                .IncludeBase<StructuralElementDto, StructuralElement>();
 
             CreateMap<StructuralElementDto, StructuralSlab>()
-                .ForMember(dest => dest.Material, opt => opt.Ignore());
+                .IncludeBase<StructuralElementDto, StructuralElement>();
 
             // Material mappings
             CreateMap<Material, MaterialDto>().ReverseMap();

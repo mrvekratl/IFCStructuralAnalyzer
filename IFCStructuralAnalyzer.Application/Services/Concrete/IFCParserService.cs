@@ -3,8 +3,8 @@ using IFCStructuralAnalyzer.Application.DTOs;
 using IFCStructuralAnalyzer.Application.Services.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Xbim.Ifc;
 using Xbim.Ifc4.Interfaces;
@@ -39,12 +39,12 @@ namespace IFCStructuralAnalyzer.Application.Services.Concrete
                     ParseDate = DateTime.Now
                 };
 
-                // Extract structural elements
+                // Elementleri çek
                 ifcModel.Columns = ExtractColumns(model).ToList();
                 ifcModel.Beams = ExtractBeams(model).ToList();
                 ifcModel.Slabs = ExtractSlabs(model).ToList();
 
-                // Calculate statistics
+                // İstatistikler
                 ifcModel.TotalVolume = ifcModel.Columns.Sum(c => c.Volume) +
                                       ifcModel.Beams.Sum(b => b.Volume) +
                                       ifcModel.Slabs.Sum(s => s.Volume);
@@ -82,7 +82,7 @@ namespace IFCStructuralAnalyzer.Application.Services.Concrete
             });
         }
 
-        #region Private Helper Methods
+        #region Private Methods
 
         private string GetProjectName(IfcStore model)
         {
@@ -104,14 +104,13 @@ namespace IFCStructuralAnalyzer.Application.Services.Concrete
             {
                 try
                 {
-                    var location = _geometryService.ConvertLocation(ifcColumn.ObjectPlacement);
+                    var location = _geometryService.GetRealWorldLocation(ifcColumn);
                     var dimensions = _geometryService.ExtractDimensions(ifcColumn);
-                    var floorLevel = _geometryService.GetFloorLevel(ifcColumn);
 
                     var column = new StructuralElementDto
                     {
-                        Name = ifcColumn.Name?.ToString() ?? "Unnamed Column",
-                        GlobalId = ifcColumn.GlobalId.ToString() ?? Guid.NewGuid().ToString(),
+                        Name = ifcColumn.Name?.ToString() ?? "Column",
+                        GlobalId = ifcColumn.GlobalId.ToString(),
                         ElementType = "Column",
                         IFCType = "IfcColumn",
 
@@ -123,18 +122,16 @@ namespace IFCStructuralAnalyzer.Application.Services.Concrete
                         Depth = dimensions.Depth,
                         Height = dimensions.Height,
 
-                        FloorLevel = floorLevel,
-
+                        FloorLevel = _geometryService.GetFloorLevel(ifcColumn),
                         Volume = _geometryService.CalculateVolume(ifcColumn),
                         ImportDate = DateTime.Now
                     };
 
                     columns.Add(column);
                 }
-                catch (Exception ex)
+                catch
                 {
-                    // Log error but continue processing other elements
-                    Console.WriteLine($"Error processing column {ifcColumn.GlobalId}: {ex.Message}");
+                    // Hatalı elemanları atla
                 }
             }
 
@@ -149,14 +146,13 @@ namespace IFCStructuralAnalyzer.Application.Services.Concrete
             {
                 try
                 {
-                    var location = _geometryService.ConvertLocation(ifcBeam.ObjectPlacement);
+                    var location = _geometryService.GetRealWorldLocation(ifcBeam);
                     var dimensions = _geometryService.ExtractDimensions(ifcBeam);
-                    var floorLevel = _geometryService.GetFloorLevel(ifcBeam);
 
                     var beam = new StructuralElementDto
                     {
-                        Name = ifcBeam.Name?.ToString() ?? "Unnamed Beam",
-                        GlobalId = ifcBeam.GlobalId.ToString() ?? Guid.NewGuid().ToString(),
+                        Name = ifcBeam.Name?.ToString() ?? "Beam",
+                        GlobalId = ifcBeam.GlobalId.ToString(),
                         ElementType = "Beam",
                         IFCType = "IfcBeam",
 
@@ -166,19 +162,18 @@ namespace IFCStructuralAnalyzer.Application.Services.Concrete
 
                         Width = dimensions.Width,
                         Depth = dimensions.Depth,
-                        Length = dimensions.Height, // For beams, height is actually length
+                        Length = dimensions.Height,
 
-                        FloorLevel = floorLevel,
-
+                        FloorLevel = _geometryService.GetFloorLevel(ifcBeam),
                         Volume = _geometryService.CalculateVolume(ifcBeam),
                         ImportDate = DateTime.Now
                     };
 
                     beams.Add(beam);
                 }
-                catch (Exception ex)
+                catch
                 {
-                    Console.WriteLine($"Error processing beam {ifcBeam.GlobalId}: {ex.Message}");
+                    // Hatalı elemanları atla
                 }
             }
 
@@ -193,14 +188,13 @@ namespace IFCStructuralAnalyzer.Application.Services.Concrete
             {
                 try
                 {
-                    var location = _geometryService.ConvertLocation(ifcSlab.ObjectPlacement);
+                    var location = _geometryService.GetRealWorldLocation(ifcSlab);
                     var dimensions = _geometryService.ExtractDimensions(ifcSlab);
-                    var floorLevel = _geometryService.GetFloorLevel(ifcSlab);
 
                     var slab = new StructuralElementDto
                     {
-                        Name = ifcSlab.Name?.ToString() ?? "Unnamed Slab",
-                        GlobalId = ifcSlab.GlobalId.ToString() ?? Guid.NewGuid().ToString(),
+                        Name = ifcSlab.Name?.ToString() ?? "Slab",
+                        GlobalId = ifcSlab.GlobalId.ToString(),
                         ElementType = "Slab",
                         IFCType = "IfcSlab",
 
@@ -208,20 +202,21 @@ namespace IFCStructuralAnalyzer.Application.Services.Concrete
                         LocationY = location.Y,
                         LocationZ = location.Z,
 
+                        Width = dimensions.Width,
+                        Depth = dimensions.Depth,
                         Thickness = dimensions.Height,
-                        Area = dimensions.Width * dimensions.Depth / 1_000_000.0, // mm² to m²
+                        Area = dimensions.Width * dimensions.Depth / 1_000_000.0,
 
-                        FloorLevel = floorLevel,
-
+                        FloorLevel = _geometryService.GetFloorLevel(ifcSlab),
                         Volume = _geometryService.CalculateVolume(ifcSlab),
                         ImportDate = DateTime.Now
                     };
 
                     slabs.Add(slab);
                 }
-                catch (Exception ex)
+                catch
                 {
-                    Console.WriteLine($"Error processing slab {ifcSlab.GlobalId}: {ex.Message}");
+                    // Hatalı elemanları atla
                 }
             }
 

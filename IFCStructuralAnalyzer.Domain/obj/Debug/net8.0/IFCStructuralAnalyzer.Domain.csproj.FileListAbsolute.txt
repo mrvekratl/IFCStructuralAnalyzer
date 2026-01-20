@@ -1,3 +1,14 @@
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Domain\bin\Debug\net8.0\IFCStructuralAnalyzer.Domain.deps.json
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Domain\bin\Debug\net8.0\IFCStructuralAnalyzer.Domain.dll
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Domain\bin\Debug\net8.0\IFCStructuralAnalyzer.Domain.pdb
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Domain\obj\Debug\net8.0\IFCStructuralAnalyzer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Domain\obj\Debug\net8.0\IFCStructuralAnalyzer.Domain.AssemblyInfoInputs.cache
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Domain\obj\Debug\net8.0\IFCStructuralAnalyzer.Domain.AssemblyInfo.cs
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Domain\obj\Debug\net8.0\IFCStructuralAnalyzer.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Domain\obj\Debug\net8.0\IFCStructuralAnalyzer.Domain.dll
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Domain\obj\Debug\net8.0\refint\IFCStructuralAnalyzer.Domain.dll
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Domain\obj\Debug\net8.0\IFCStructuralAnalyzer.Domain.pdb
+C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Domain\obj\Debug\net8.0\ref\IFCStructuralAnalyzer.Domain.dll
 C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Domain\bin\Debug\net8.0\IFCStructuralAnalyzer.Domain.deps.json
 C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Domain\bin\Debug\net8.0\IFCStructuralAnalyzer.Domain.dll
 C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Domain\bin\Debug\net8.0\IFCStructuralAnalyzer.Domain.pdb

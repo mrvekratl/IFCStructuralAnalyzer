@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using IFCStructuralAnalyzer.Presentation.ViewModels;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -11,14 +12,18 @@ using System.Windows.Shapes;
 
 namespace IFCStructuralAnalyzer.Presentation
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(MainViewModel viewModel)
         {
             InitializeComponent();
+            DataContext = viewModel;
+
+            // Set viewport reference
+            Loaded += (s, e) =>
+            {
+                viewModel.Viewport3D = Viewport3D;
+            };
         }
     }
 }

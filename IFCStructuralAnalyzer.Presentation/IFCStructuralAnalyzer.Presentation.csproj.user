@@ -7,27 +7,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Views\ElementListView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\IFCImportView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\Viewport3DView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="Views\ElementListView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Views\IFCImportView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="Views\MainWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Views\Viewport3DView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

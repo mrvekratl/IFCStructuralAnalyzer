@@ -1,6 +1,6 @@
-﻿using IFCStructuralAnalyzer.Domain.Entities;
+﻿using IFCStructuralAnalyzer.Application.Abstractions.Repositories.Interfaces;
+using IFCStructuralAnalyzer.Domain.Entities;
 using IFCStructuralAnalyzer.Infrastructure.Data.Context;
-using IFCStructuralAnalyzer.Infrastructure.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

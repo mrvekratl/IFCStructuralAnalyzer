@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
+using IFCStructuralAnalyzer.Application.Abstractions.Repositories.Interfaces;
 using IFCStructuralAnalyzer.Application.DTOs;
 using IFCStructuralAnalyzer.Application.Services.Interfaces;
 using IFCStructuralAnalyzer.Domain.Entities;
-using IFCStructuralAnalyzer.Infrastructure.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,49 +53,86 @@ namespace IFCStructuralAnalyzer.Application.Services.Concrete
 
         public async Task ImportElementsAsync(IEnumerable<StructuralElementDto> elements)
         {
-            // Get default material for elements without material assignment
-            var defaultMaterial = await _materialRepository.GetDefaultConcreteAsync();
-
-            var entities = new List<StructuralElement>();
-
-            foreach (var dto in elements)
+            try
             {
-                StructuralElement entity;
+                var defaultMaterial = await _materialRepository.GetDefaultConcreteAsync();
+                var entities = new List<StructuralElement>();
+                var processedGlobalIds = new HashSet<string>();
+                int duplicateCount = 0;
 
-                // Create appropriate entity type
-                switch (dto.ElementType.ToLower())
+                foreach (var dto in elements)
                 {
-                    case "column":
-                        entity = _mapper.Map<StructuralColumn>(dto);
-                        break;
-                    case "beam":
-                        entity = _mapper.Map<StructuralBeam>(dto);
-                        if (entity is StructuralBeam beam && dto.Length.HasValue)
-                            beam.Length = dto.Length.Value;
-                        break;
-                    case "slab":
-                        entity = _mapper.Map<StructuralSlab>(dto);
-                        if (entity is StructuralSlab slab)
-                        {
-                            slab.Area = dto.Area ?? 0;
-                            slab.Thickness = dto.Thickness ?? 0;
-                        }
-                        break;
-                    default:
-                        continue; // Skip unknown types
+                    // GlobalId benzersizliğini kontrol et
+                    string uniqueGlobalId = dto.GlobalId;
+
+                    if (processedGlobalIds.Contains(dto.GlobalId))
+                    {
+                        uniqueGlobalId = Guid.NewGuid().ToString();
+                        duplicateCount++;
+                        Console.WriteLine($"⚠️  Duplicate GlobalId for '{dto.Name}'. New ID: {uniqueGlobalId}");
+                    }
+
+                    processedGlobalIds.Add(uniqueGlobalId);
+
+                    StructuralElement entity;
+
+                    // AutoMapper ile map et (GlobalId ignore edilecek)
+                    switch (dto.ElementType.ToLower())
+                    {
+                        case "column":
+                            entity = _mapper.Map<StructuralColumn>(dto);
+                            break;
+                        case "beam":
+                            entity = _mapper.Map<StructuralBeam>(dto);
+                            if (entity is StructuralBeam beam && dto.Length.HasValue)
+                                beam.Length = dto.Length.Value;
+                            break;
+                        case "slab":
+                            entity = _mapper.Map<StructuralSlab>(dto);
+                            if (entity is StructuralSlab slab)
+                            {
+                                slab.Area = dto.Area ?? 0;
+                                slab.Thickness = dto.Thickness ?? 0;
+                            }
+                            break;
+                        default:
+                            Console.WriteLine($"⚠️  Unknown element type: {dto.ElementType}");
+                            continue;
+                    }
+
+                    // Manuel olarak GlobalId ata (AutoMapper ignore etti)
+                    entity.GlobalId = uniqueGlobalId;
+
+                    // Default material
+                    if (entity.MaterialId == null && defaultMaterial != null)
+                    {
+                        entity.MaterialId = defaultMaterial.Id;
+                    }
+
+                    entities.Add(entity);
                 }
 
-                // Assign default material if not specified
-                if (entity.MaterialId == null && defaultMaterial != null)
+                if (entities.Any())
                 {
-                    entity.MaterialId = defaultMaterial.Id;
-                }
+                    await _repository.AddRangeAsync(entities);
+                    await _repository.SaveChangesAsync();
 
-                entities.Add(entity);
+                    Console.WriteLine($"✅ Successfully imported {entities.Count} elements");
+                    if (duplicateCount > 0)
+                    {
+                        Console.WriteLine($"🔧 Fixed {duplicateCount} duplicate GlobalId(s)");
+                    }
+                }
             }
-
-            await _repository.AddRangeAsync(entities);
-            await _repository.SaveChangesAsync();
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ ERROR: {ex.Message}");
+                if (ex.InnerException != null)
+                {
+                    Console.WriteLine($"❌ INNER: {ex.InnerException.Message}");
+                }
+                throw;
+            }
         }
 
         public async Task DeleteAllAsync()

@@ -17,6 +17,9 @@ namespace IFCStructuralAnalyzer.Application.DTOs
         public double LocationX { get; set; }
         public double LocationY { get; set; }
         public double LocationZ { get; set; }
+        public double RotationX { get; set; }
+        public double RotationY { get; set; }
+        public double RotationZ { get; set; } = 0;
 
         // Dimensions (mm)
         public double Width { get; set; }

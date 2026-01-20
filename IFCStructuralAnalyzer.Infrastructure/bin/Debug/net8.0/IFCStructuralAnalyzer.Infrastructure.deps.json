@@ -33,7 +33,7 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.0",
-          "Microsoft.Extensions.Options": "8.0.0"
+          "Microsoft.Extensions.Options": "8.0.2"
         },
         "runtime": {
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
@@ -466,7 +466,7 @@
           "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.2",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Options": "8.0.0",
+          "Microsoft.Extensions.Options": "8.0.2",
           "Microsoft.Extensions.Primitives": "8.0.0"
         },
         "runtime": {
@@ -522,7 +522,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Options": "8.0.0"
+          "Microsoft.Extensions.Options": "8.0.2"
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.Logging.dll": {
@@ -542,7 +542,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Options/8.0.0": {
+      "Microsoft.Extensions.Options/8.0.2": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.2",
           "Microsoft.Extensions.Primitives": "8.0.0"
@@ -550,7 +550,7 @@
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.Options.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
+            "fileVersion": "8.0.224.6711"
           }
         }
       },
@@ -926,13 +926,6 @@
         }
       },
       "System.Threading.Channels/6.0.0": {},
-      "System.Threading.Tasks/4.3.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.Runtime": "4.3.0"
-        }
-      },
       "System.Threading.Tasks.Extensions/4.5.4": {},
       "System.Windows.Extensions/6.0.0": {
         "dependencies": {
@@ -976,24 +969,43 @@
           "Xbim.Ifc4x3": "6.0.563"
         }
       },
-      "Xbim.Geometry/5.1.820": {
+      "Xbim.Geometry/6.3.873-netcore": {
         "dependencies": {
-          "Xbim.Geometry.Engine.Interop": "5.1.820",
-          "Xbim.ModelGeometry.Scene": "5.1.820"
+          "Xbim.Geometry.Abstractions": "6.3.873-netcore",
+          "Xbim.Geometry.Engine.Interop": "6.3.873-netcore",
+          "Xbim.ModelGeometry.Scene": "6.3.873-netcore",
+          "Xbim.Tessellator": "6.3.873-netcore"
         }
       },
-      "Xbim.Geometry.Engine.Interop/5.1.820": {
+      "Xbim.Geometry.Abstractions/6.3.873-netcore": {
         "dependencies": {
-          "Microsoft.Extensions.Logging": "8.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "System.Threading.Tasks": "4.3.0",
-          "Xbim.Ifc": "6.0.563",
-          "Xbim.Tessellator": "6.0.489"
+          "Xbim.Essentials": "6.0.563"
         },
         "runtime": {
-          "lib/net472/Xbim.Geometry.Engine.Interop.dll": {
-            "assemblyVersion": "5.1.0.0",
-            "fileVersion": "5.1.820.0"
+          "lib/netstandard2.0/Xbim.Geometry.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.3.0.873"
+          }
+        }
+      },
+      "Xbim.Geometry.Engine.Interop/6.3.873-netcore": {
+        "dependencies": {
+          "Microsoft.Extensions.Options": "8.0.2",
+          "Xbim.Geometry.Abstractions": "6.3.873-netcore",
+          "Xbim.Geometry.Occt": "7.8.1"
+        },
+        "runtime": {
+          "lib/net8.0/Xbim.Geometry.Engine.Interop.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.3.0.873"
+          }
+        }
+      },
+      "Xbim.Geometry.Occt/7.8.1": {
+        "runtime": {
+          "lib/net8.0/Xbim.Geometry.Occt.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "7.8.1.0"
           }
         }
       },
@@ -1075,29 +1087,27 @@
           }
         }
       },
-      "Xbim.ModelGeometry.Scene/5.1.820": {
+      "Xbim.ModelGeometry.Scene/6.3.873-netcore": {
         "dependencies": {
-          "Xbim.Geometry.Engine.Interop": "5.1.820",
-          "Xbim.Ifc": "6.0.563",
-          "Xbim.Tessellator": "6.0.489"
+          "System.Configuration.ConfigurationManager": "6.0.1",
+          "Xbim.Geometry.Engine.Interop": "6.3.873-netcore",
+          "Xbim.Tessellator": "6.3.873-netcore"
         },
         "runtime": {
-          "lib/net472/Xbim.ModelGeometry.Scene.dll": {
-            "assemblyVersion": "5.1.0.1",
-            "fileVersion": "5.1.820.0"
+          "lib/net8.0/Xbim.ModelGeometry.Scene.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.3.0.873"
           }
         }
       },
-      "Xbim.Tessellator/6.0.489": {
+      "Xbim.Tessellator/6.3.873-netcore": {
         "dependencies": {
-          "Xbim.Common": "6.0.563",
-          "Xbim.Ifc2x3": "6.0.563",
-          "Xbim.Ifc4": "6.0.563"
+          "Xbim.Geometry.Abstractions": "6.3.873-netcore"
         },
         "runtime": {
           "lib/net8.0/Xbim.Tessellator.dll": {
             "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.489.0"
+            "fileVersion": "6.3.0.873"
           }
         }
       },
@@ -1107,7 +1117,8 @@
           "IFCStructuralAnalyzer.Domain": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.2",
           "Xbim.Essentials": "6.0.563",
-          "Xbim.Geometry": "5.1.820"
+          "Xbim.Geometry": "6.3.873-netcore",
+          "Xbim.Geometry.Engine.Interop": "6.3.873-netcore"
         },
         "runtime": {
           "IFCStructuralAnalyzer.Application.dll": {
@@ -1342,12 +1353,12 @@
       "path": "microsoft.extensions.logging.abstractions/8.0.0",
       "hashPath": "microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Options/8.0.0": {
+    "Microsoft.Extensions.Options/8.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JOVOfqpnqlVLUzINQ2fox8evY2SKLYJ3BV8QDe/Jyp21u1T7r45x/R/5QdteURMR5r01GxeJSBBUOCOyaNXA3g==",
-      "path": "microsoft.extensions.options/8.0.0",
-      "hashPath": "microsoft.extensions.options.8.0.0.nupkg.sha512"
+      "sha512": "sha512-dWGKvhFybsaZpGmzkGCbNNwBD1rVlWzrZKANLW/CcbFJpCEceMCGzT7zZwHOGBCbwM0SzBuceMj5HN1LKV1QqA==",
+      "path": "microsoft.extensions.options/8.0.2",
+      "hashPath": "microsoft.extensions.options.8.0.2.nupkg.sha512"
     },
     "Microsoft.Extensions.Primitives/8.0.0": {
       "type": "package",
@@ -1664,13 +1675,6 @@
       "path": "system.threading.channels/6.0.0",
       "hashPath": "system.threading.channels.6.0.0.nupkg.sha512"
     },
-    "System.Threading.Tasks/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
-      "path": "system.threading.tasks/4.3.0",
-      "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
-    },
     "System.Threading.Tasks.Extensions/4.5.4": {
       "type": "package",
       "serviceable": true,
@@ -1699,19 +1703,33 @@
       "path": "xbim.essentials/6.0.563",
       "hashPath": "xbim.essentials.6.0.563.nupkg.sha512"
     },
-    "Xbim.Geometry/5.1.820": {
+    "Xbim.Geometry/6.3.873-netcore": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FFwuvLP1R4nWdD69VgF1+jEmiK2743FxNc00LLu97BfzQw0aYvsNqOO8yC2UTIo7a7m5OFCZgBte1qNFm1AdrQ==",
-      "path": "xbim.geometry/5.1.820",
-      "hashPath": "xbim.geometry.5.1.820.nupkg.sha512"
+      "sha512": "sha512-gckftdVr95mwJa+ox+BobCb/Q9TiT9Be6ifkHbYABjhm80mTOaqT5n3zt/OTBgg917gmYakQRKe7pzYYOyktbQ==",
+      "path": "xbim.geometry/6.3.873-netcore",
+      "hashPath": "xbim.geometry.6.3.873-netcore.nupkg.sha512"
     },
-    "Xbim.Geometry.Engine.Interop/5.1.820": {
+    "Xbim.Geometry.Abstractions/6.3.873-netcore": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ScdCTZcehRwYzMtfbRaYcU7KhyGisqNg39sHfVq5jZbMvKb976J0LKhn75LmYTWW37nYwsYo7t7Kle/Qok4Ugg==",
-      "path": "xbim.geometry.engine.interop/5.1.820",
-      "hashPath": "xbim.geometry.engine.interop.5.1.820.nupkg.sha512"
+      "sha512": "sha512-hX3NRwfg+Jx2BDM2lgakSn8PGcW+22T8fz6STURAxfmUTKkbbvtB6h9jJvCsIFqKr4n6ja3yQ3k6tLwvq59MUQ==",
+      "path": "xbim.geometry.abstractions/6.3.873-netcore",
+      "hashPath": "xbim.geometry.abstractions.6.3.873-netcore.nupkg.sha512"
+    },
+    "Xbim.Geometry.Engine.Interop/6.3.873-netcore": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Pfoa9GAruNJDwaSrginu/vI8rccam6ZMqOWB4/6K0u1X626nE1FqqSft6qPjDg0Q5c875gO0sIH7oCoYPhtJ9w==",
+      "path": "xbim.geometry.engine.interop/6.3.873-netcore",
+      "hashPath": "xbim.geometry.engine.interop.6.3.873-netcore.nupkg.sha512"
+    },
+    "Xbim.Geometry.Occt/7.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YxKudylTyG/c6JrbpS3bec0RAoiL/ILbcv7m04B+EuWMRGJww7tKdz1o8e5gTgVapvbhUZpy9yB/MWW/Nqmgkg==",
+      "path": "xbim.geometry.occt/7.8.1",
+      "hashPath": "xbim.geometry.occt.7.8.1.nupkg.sha512"
     },
     "Xbim.Ifc/6.0.563": {
       "type": "package",
@@ -1755,19 +1773,19 @@
       "path": "xbim.io.memorymodel/6.0.563",
       "hashPath": "xbim.io.memorymodel.6.0.563.nupkg.sha512"
     },
-    "Xbim.ModelGeometry.Scene/5.1.820": {
+    "Xbim.ModelGeometry.Scene/6.3.873-netcore": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/P/1JAQa8OqKncpwqSD5Xl5fZPqnf3g1BVL4uzBRoc1LwoclwulIciGaw7QaHs2tHQmSDsboRGlcx5Z3sHlKBw==",
-      "path": "xbim.modelgeometry.scene/5.1.820",
-      "hashPath": "xbim.modelgeometry.scene.5.1.820.nupkg.sha512"
+      "sha512": "sha512-yFSSNf17Lmx1qjSKIeNzOQjgvY0I+YHizvWFvjaxCoEcMi7Urp37p7g7OifRyzXhxIE5MCSiF6j2qHdbR6lVaA==",
+      "path": "xbim.modelgeometry.scene/6.3.873-netcore",
+      "hashPath": "xbim.modelgeometry.scene.6.3.873-netcore.nupkg.sha512"
     },
-    "Xbim.Tessellator/6.0.489": {
+    "Xbim.Tessellator/6.3.873-netcore": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-bmAJkQVRxbvkbXG/EXVits6blXmaeycO3rB1m0oNFIHEQ7Gn9PTgudqfUMnTOnHCsacg5h/3HiuyvWKfnbw6YA==",
-      "path": "xbim.tessellator/6.0.489",
-      "hashPath": "xbim.tessellator.6.0.489.nupkg.sha512"
+      "sha512": "sha512-179kRsRFfZR1gZDeWXHTW99Ak2UapfbYFTdyAihI5QoTnnj5Vv4+PCbpSXrDEr/wuc+Dg1j/TqtTy7lnubngig==",
+      "path": "xbim.tessellator/6.3.873-netcore",
+      "hashPath": "xbim.tessellator.6.3.873-netcore.nupkg.sha512"
     },
     "IFCStructuralAnalyzer.Application/1.0.0": {
       "type": "project",

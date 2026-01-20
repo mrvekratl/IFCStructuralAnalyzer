@@ -1,14 +1,14 @@
-﻿using IFCStructuralAnalyzer.Infrastructure;
+﻿using IFCStructuralAnalyzer.Application;
+using IFCStructuralAnalyzer.Infrastructure;
+using IFCStructuralAnalyzer.Presentation.Services;
+using IFCStructuralAnalyzer.Presentation.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 using System.Windows;
-
 
 namespace IFCStructuralAnalyzer.Presentation
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App : System.Windows.Application
     {
         private readonly IHost _host;
@@ -18,38 +18,63 @@ namespace IFCStructuralAnalyzer.Presentation
             _host = Host.CreateDefaultBuilder()
                 .ConfigureServices((context, services) =>
                 {
-                    // Infrastructure layer services (DbContext, Repositories)
+                    // Infrastructure Layer (Data Access)
                     services.AddInfrastructure();
 
-                    // Application layer services (sonra ekleyeceğiz)
-                    // services.AddApplication();
+                    // Application Layer (Business Logic)
+                    services.AddApplication();
 
-                    // ViewModels (sonra ekleyeceğiz)
-                    // services.AddTransient<MainViewModel>();
-                    // services.AddSingleton<MainWindow>();
+                    // Presentation Layer Services
+                    services.AddSingleton<Rendering3DService>();
+
+                    // ViewModels
+                    services.AddTransient<MainViewModel>();
+
+                    // Views
+                    services.AddTransient<MainWindow>();
                 })
                 .Build();
         }
 
         protected override async void OnStartup(StartupEventArgs e)
         {
-            await _host.StartAsync();
-
-            var mainWindow = new MainWindow();
-            mainWindow.Show();
-
             base.OnStartup(e);
+
+            try
+            {
+                await _host.StartAsync();
+
+                var mainWindow = _host.Services.GetRequiredService<MainWindow>();
+                mainWindow.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    $"Application startup error: {ex.Message}",
+                    "Startup Error",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+
+                Shutdown(1);
+            }
         }
 
         protected override async void OnExit(ExitEventArgs e)
         {
-            using (_host)
+            try
             {
-                await _host.StopAsync();
+                using (_host)
+                {
+                    await _host.StopAsync(TimeSpan.FromSeconds(5));
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log error during shutdown if needed
+                System.Diagnostics.Debug.WriteLine($"Shutdown error: {ex.Message}");
             }
 
             base.OnExit(e);
         }
     }
-
 }

@@ -12,7 +12,8 @@
           "IFCStructuralAnalyzer.Domain": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.2",
           "Xbim.Essentials": "6.0.563",
-          "Xbim.Geometry": "5.1.820"
+          "Xbim.Geometry": "5.1.820",
+          "Xbim.Geometry.Engine.Interop": "5.1.820"
         },
         "runtime": {
           "IFCStructuralAnalyzer.Application.dll": {}

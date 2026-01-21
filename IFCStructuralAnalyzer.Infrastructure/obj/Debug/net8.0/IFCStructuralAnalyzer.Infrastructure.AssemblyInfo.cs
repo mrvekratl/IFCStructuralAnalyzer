@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IFCStructuralAnalyzer.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0356e1f3b41ae83927440f461b040218d9550dd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b70a6428089b8ce5d8561fcd8b83c0feb5621b5")]
 [assembly: System.Reflection.AssemblyProductAttribute("IFCStructuralAnalyzer.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IFCStructuralAnalyzer.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

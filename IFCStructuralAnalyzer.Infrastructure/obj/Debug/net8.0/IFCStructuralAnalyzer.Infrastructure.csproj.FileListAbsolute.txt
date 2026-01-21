@@ -1,3 +1,23 @@
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.deps.json
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.runtimeconfig.json
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.dll
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.pdb
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Application.dll
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Domain.dll
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Application.pdb
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Domain.pdb
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.AssemblyInfo.cs
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.sourcelink.json
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStruc.ED4F74CE.Up2Date
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.dll
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\refint\IFCStructuralAnalyzer.Infrastructure.dll
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.pdb
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.genruntimeconfig.cache
+C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\ref\IFCStructuralAnalyzer.Infrastructure.dll
 C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.deps.json
 C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.runtimeconfig.json
 C:\Users\Monster\Desktop\ifc eski\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.dll
@@ -83,23 +103,3 @@ C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCS
 C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\win-x64\Xbim.Geometry.Engine.pdb
 C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\win-x64\Xbim.Geometry.Engine.dll
 C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\win-x64\ijwhost.dll
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.deps.json
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.runtimeconfig.json
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.dll
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.pdb
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Application.dll
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Domain.dll
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Application.pdb
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\bin\Debug\net8.0\IFCStructuralAnalyzer.Domain.pdb
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.csproj.AssemblyReference.cache
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.AssemblyInfo.cs
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.sourcelink.json
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStruc.ED4F74CE.Up2Date
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.dll
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\refint\IFCStructuralAnalyzer.Infrastructure.dll
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.pdb
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\IFCStructuralAnalyzer.Infrastructure.genruntimeconfig.cache
-C:\Users\Monster\Desktop\Github\IFCStructuralAnalyzer\IFCStructuralAnalyzer\IFCStructuralAnalyzer.Infrastructure\obj\Debug\net8.0\ref\IFCStructuralAnalyzer.Infrastructure.dll

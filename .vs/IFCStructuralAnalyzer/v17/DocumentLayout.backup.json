@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{39AFB6A2-C700-4DEE-8062-415C41FE9055}|IFCStructuralAnalyzer.Application\\IFCStructuralAnalyzer.Application.csproj|c:\\users\\monster\\desktop\\github\\ifcstructuralanalyzer\\ifcstructuralanalyzer\\ifcstructuralanalyzer.application\\services\\concrete\\ifcparserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39AFB6A2-C700-4DEE-8062-415C41FE9055}|IFCStructuralAnalyzer.Application\\IFCStructuralAnalyzer.Application.csproj|solutionrelative:ifcstructuralanalyzer.application\\services\\concrete\\ifcparserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A14C4852-EDEE-480F-8D52-D7FACF52F157}|IFCStructuralAnalyzer.Presentation\\IFCStructuralAnalyzer.Presentation.csproj|c:\\users\\monster\\desktop\\github\\ifcstructuralanalyzer\\ifcstructuralanalyzer\\ifcstructuralanalyzer.presentation\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A14C4852-EDEE-480F-8D52-D7FACF52F157}|IFCStructuralAnalyzer.Presentation\\IFCStructuralAnalyzer.Presentation.csproj|solutionrelative:ifcstructuralanalyzer.presentation\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39AFB6A2-C700-4DEE-8062-415C41FE9055}|IFCStructuralAnalyzer.Application\\IFCStructuralAnalyzer.Application.csproj|c:\\users\\monster\\desktop\\github\\ifcstructuralanalyzer\\ifcstructuralanalyzer\\ifcstructuralanalyzer.application\\services\\concrete\\geometryconversionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39AFB6A2-C700-4DEE-8062-415C41FE9055}|IFCStructuralAnalyzer.Application\\IFCStructuralAnalyzer.Application.csproj|solutionrelative:ifcstructuralanalyzer.application\\services\\concrete\\geometryconversionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A14C4852-EDEE-480F-8D52-D7FACF52F157}|IFCStructuralAnalyzer.Presentation\\IFCStructuralAnalyzer.Presentation.csproj|c:\\users\\monster\\desktop\\github\\ifcstructuralanalyzer\\ifcstructuralanalyzer\\ifcstructuralanalyzer.presentation\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A14C4852-EDEE-480F-8D52-D7FACF52F157}|IFCStructuralAnalyzer.Presentation\\IFCStructuralAnalyzer.Presentation.csproj|solutionrelative:ifcstructuralanalyzer.presentation\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GeometryConversionService.cs",
-              "DocumentMoniker": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Application\\Services\\Concrete\\GeometryConversionService.cs",
-              "RelativeDocumentMoniker": "IFCStructuralAnalyzer.Application\\Services\\Concrete\\GeometryConversionService.cs",
-              "ToolTip": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Application\\Services\\Concrete\\GeometryConversionService.cs",
-              "RelativeToolTip": "IFCStructuralAnalyzer.Application\\Services\\Concrete\\GeometryConversionService.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAowMsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T15:08:45.54Z",
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Presentation\\App.xaml",
+              "RelativeDocumentMoniker": "IFCStructuralAnalyzer.Presentation\\App.xaml",
+              "ToolTip": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Presentation\\App.xaml",
+              "RelativeToolTip": "IFCStructuralAnalyzer.Presentation\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-21T10:07:00.483Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "IFCParserService.cs",
-              "DocumentMoniker": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Application\\Services\\Concrete\\IFCParserService.cs",
-              "RelativeDocumentMoniker": "IFCStructuralAnalyzer.Application\\Services\\Concrete\\IFCParserService.cs",
-              "ToolTip": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Application\\Services\\Concrete\\IFCParserService.cs",
-              "RelativeToolTip": "IFCStructuralAnalyzer.Application\\Services\\Concrete\\IFCParserService.cs",
-              "ViewState": "AgIAANIAAAAAAAAAAAAYwOMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T14:39:16.007Z",
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Presentation\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "IFCStructuralAnalyzer.Presentation\\Views\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Monster\\Desktop\\Github\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer\\IFCStructuralAnalyzer.Presentation\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "IFCStructuralAnalyzer.Presentation\\Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-21T10:06:47.105Z",
               "EditorCaption": ""
             }
           ]

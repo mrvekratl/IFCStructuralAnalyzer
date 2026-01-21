@@ -14,8 +14,13 @@ namespace IFCStructuralAnalyzer.Application.Services.Interfaces
         /// <summary>
         /// Get real world location using Geometry Engine
         /// </summary>
-        (double X, double Y, double Z) GetRealWorldLocation(IIfcProduct product);      
-        
+        (double X, double Y, double Z) GetRealWorldLocation(IIfcProduct product);
+
+       
+        /// <summary>
+        /// Convert IFC location to our coordinate system
+        /// </summary>
+        (double X, double Y, double Z) ConvertLocation(IIfcObjectPlacement? placement);
 
         /// <summary>
         /// Extract dimensions from IFC element
